@@ -6,4 +6,10 @@ const getOrders = () => {
     return orderModel
 }
 
-export { getOrders }
+const createOrder = (orderData) => {
+    orderModel.push(orderData)
+    return orderModel
+}
+
+
+export { getOrders,createOrder }

@@ -8,4 +8,12 @@ const getOrders = (req, res) => {
     })
 }
 
-export {getOrders}
+const createOrder = (req, res) => {
+    const orders = orderService.createOrder(req.body)
+    res.status(201).json({
+        success: true,
+        data: orders
+    })
+}
+
+export { getOrders,createOrder }
