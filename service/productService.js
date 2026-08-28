@@ -1,4 +1,6 @@
-import productModel from "../model/productModel.js"
+import products from "../model/productModel.js"
+
+let productModel = products
 
 const getProducts = () => {
     return productModel

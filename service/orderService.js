@@ -1,4 +1,6 @@
-import orderModel from "../model/orderModel.js"
+import orders from "../model/orderModel.js"
+
+let orderModel = orders
 
 const getOrders = () => {
     return orderModel
