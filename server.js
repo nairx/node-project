@@ -17,3 +17,6 @@ app.listen(PORT, () => console.log(`Server started on port ${PORT}`))
 app.use("/api/users", userRouter)
 app.use("/api/products", productRouter)
 app.use("/api/orders", orderRouter)
+
+
+//updating server.js
