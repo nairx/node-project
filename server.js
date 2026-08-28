@@ -2,6 +2,7 @@ import express from "express"
 import dotenv from "dotenv"
 import userRouter from "./router/userRoutes.js"
 import productRouter from "./router/productRoutes.js"
+import orderRouter from "./router/orderRouter.js"
 
 dotenv.config()
 
@@ -13,5 +14,6 @@ app.use(express.json())
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`))
 
-app.use("/api/users",userRouter)
-app.use("/api/products",productRouter)
+app.use("/api/users", userRouter)
+app.use("/api/products", productRouter)
+app.use("/api/orders", orderRouter)
