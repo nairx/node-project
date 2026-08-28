@@ -3,6 +3,9 @@ import express from "express"
 
 const Router = express.Router()
 
-Router.get("/",productController.getProducts)
+Router.get("/", productController.getProducts)
+Router.post("/", productController.createProduct)
+Router.put("/:id", productController.updateProduct)
+Router.delete("/:id", productController.deleteProduct)
 
 export default Router
