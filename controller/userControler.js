@@ -1,9 +1,10 @@
-import userModel from "../model/userModel.js"
+import * as userService from "../service/userService.js"
 
 const getUsers = (req, res) => {
+    const users = userService.getUsers()
     res.json({
         success: true,
-        data: userModel
+        data: users
     })
 }
 
