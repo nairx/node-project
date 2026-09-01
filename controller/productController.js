@@ -4,9 +4,10 @@ const getProducts = (req, res) => {
     const products = productService.getProducts()
     res.status(200).json({
         success: true,
-        data: products
+        products
     })
 }
+
 
 const createProduct = (req, res) => {
     const product = productService.createProduct(req.body)
@@ -35,4 +36,4 @@ const deleteProduct = (req, res) => {
 }
 
 
-export { getProducts, createProduct, updateProduct,deleteProduct }
+export { getProducts, createProduct, updateProduct, deleteProduct }
