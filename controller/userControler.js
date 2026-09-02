@@ -8,4 +8,12 @@ const getUsers = (req, res) => {
     })
 }
 
-export { getUsers }
+const login = (req, res) => {
+    const user = userService.login(req.body)
+    res.json(user)
+}
+
+
+
+
+export { getUsers,login }
